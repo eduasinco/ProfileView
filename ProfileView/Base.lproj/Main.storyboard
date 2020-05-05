@@ -37,7 +37,7 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
-                                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="bottom" secondItem="LdG-PP-3Ai" secondAttribute="bottom" constant="1000" id="BMh-Of-svg"/>
                                                                     <constraint firstItem="LdG-PP-3Ai" firstAttribute="centerX" secondItem="3zC-n4-o0R" secondAttribute="centerX" id="ZPp-me-P2X"/>
@@ -68,7 +68,7 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
-                                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <constraints>
                                                                     <constraint firstItem="NXD-Rd-N6u" firstAttribute="top" secondItem="xjw-0h-6xi" secondAttribute="top" constant="1000" id="6qE-Za-J5h"/>
                                                                     <constraint firstAttribute="bottom" secondItem="NXD-Rd-N6u" secondAttribute="bottom" constant="1000" id="WDu-bc-eAx"/>
