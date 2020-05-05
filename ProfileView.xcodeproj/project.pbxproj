@@ -14,6 +14,9 @@
 		87D8A5C82460A3620056AC9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87D8A5C72460A3620056AC9B /* Assets.xcassets */; };
 		87D8A5CB2460A3620056AC9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87D8A5C92460A3620056AC9B /* LaunchScreen.storyboard */; };
 		87D8A5D32460A5BD0056AC9B /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D8A5D22460A5BD0056AC9B /* Utils.swift */; };
+		87D8A5F7246203620056AC9B /* Tab1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D8A5F6246203620056AC9B /* Tab1ViewController.swift */; };
+		87D8A5F92462036E0056AC9B /* Tab2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D8A5F82462036E0056AC9B /* Tab2ViewController.swift */; };
+		87D8A5FB246206660056AC9B /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D8A5FA246206660056AC9B /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		87D8A5CA2460A3620056AC9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		87D8A5CC2460A3630056AC9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87D8A5D22460A5BD0056AC9B /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		87D8A5F6246203620056AC9B /* Tab1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab1ViewController.swift; sourceTree = "<group>"; };
+		87D8A5F82462036E0056AC9B /* Tab2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab2ViewController.swift; sourceTree = "<group>"; };
+		87D8A5FA246206660056AC9B /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +67,9 @@
 				87D8A5BE2460A3610056AC9B /* AppDelegate.swift */,
 				87D8A5C02460A3610056AC9B /* SceneDelegate.swift */,
 				87D8A5C22460A3610056AC9B /* ViewController.swift */,
+				87D8A5F6246203620056AC9B /* Tab1ViewController.swift */,
+				87D8A5F82462036E0056AC9B /* Tab2ViewController.swift */,
+				87D8A5FA246206660056AC9B /* TableViewCell.swift */,
 				87D8A5C42460A3610056AC9B /* Main.storyboard */,
 				87D8A5C72460A3620056AC9B /* Assets.xcassets */,
 				87D8A5C92460A3620056AC9B /* LaunchScreen.storyboard */,
@@ -144,7 +153,10 @@
 				87D8A5C32460A3610056AC9B /* ViewController.swift in Sources */,
 				87D8A5BF2460A3610056AC9B /* AppDelegate.swift in Sources */,
 				87D8A5C12460A3610056AC9B /* SceneDelegate.swift in Sources */,
+				87D8A5F7246203620056AC9B /* Tab1ViewController.swift in Sources */,
 				87D8A5D32460A5BD0056AC9B /* Utils.swift in Sources */,
+				87D8A5FB246206660056AC9B /* TableViewCell.swift in Sources */,
+				87D8A5F92462036E0056AC9B /* Tab2ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

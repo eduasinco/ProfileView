@@ -16,7 +16,9 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var externalScrollView: UIScrollView!
     @IBOutlet weak var scrollView1: UIScrollView!
     @IBOutlet weak var scrollView1Width: NSLayoutConstraint!
+    @IBOutlet weak var container1TopConstraint: NSLayoutConstraint!
     @IBOutlet weak var scrollView2: UIScrollView!
+    @IBOutlet weak var container2TopConstraint: NSLayoutConstraint!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +26,9 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         scrollView1.delegate = self
         scrollView2.delegate = self
         scrollView1Width.constant = self.view.frame.width
+        
+        container1TopConstraint.constant = headerView.frame.height
+        container2TopConstraint.constant = headerView.frame.height
     }
     
     var changingIndex = false
