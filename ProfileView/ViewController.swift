@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UIScrollViewDelegate {
+class ViewController: UIViewController, UIScrollViewDelegate, UIGestureRecognizerDelegate {
 
     @IBOutlet weak var headerView: PassthroughView!
     @IBOutlet weak var headerTopConstraint: NSLayoutConstraint!
@@ -20,15 +20,20 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var scrollView2: UIScrollView!
     @IBOutlet weak var container2TopConstraint: NSLayoutConstraint!
     
+    @IBOutlet weak var headerHeighConstraint: NSLayoutConstraint!
     override func viewDidLoad() {
         super.viewDidLoad()
         externalScrollView.delegate = self
         scrollView1.delegate = self
         scrollView2.delegate = self
         scrollView1Width.constant = self.view.frame.width
-        
         container1TopConstraint.constant = headerView.frame.height
         container2TopConstraint.constant = headerView.frame.height
+        segmentView.isExclusiveTouch = true
+        // view1.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.tap(_:))))
+    }
+    @objc func tap(_ sender: UITapGestureRecognizer) {
+        print(sender.state.rawValue)
     }
     
     var changingIndex = false
@@ -38,7 +43,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         externalScrollView.setContentOffset(CGPoint(x:x, y:0), animated: true)
     }
     
-    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+    func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
         changingIndex = false
     }
     
@@ -56,9 +61,15 @@ class ViewController: UIViewController, UIScrollViewDelegate {
                     scrollView1.contentOffset.y = headerView.frame.height - segmentView.frame.height
                 }
             } else {
-                headerTopConstraint.constant = -scrollView.contentOffset.y
                 scrollView1.contentOffset.y = scrollView.contentOffset.y
                 scrollView2.contentOffset.y = scrollView.contentOffset.y
+                
+                if scrollView.contentOffset.y <= 0 {
+                    headerTopConstraint.constant = 0
+                    headerHeighConstraint.constant = 400 - scrollView.contentOffset.y
+                } else {
+                    headerTopConstraint.constant = -scrollView.contentOffset.y
+                }
             }
         }
     }

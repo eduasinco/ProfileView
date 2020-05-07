@@ -16,6 +16,20 @@ class PassthroughView: UIView {
 }
 
 class ReselectableSegmentedControl: UISegmentedControl {
+    override var next: UIResponder? {
+        get {
+            var view: UIScrollView?
+            for v in self.superview!.superview!.subviews {
+                if v is UIScrollView{
+                    view = v as! UIScrollView
+                }
+            }
+            return view?.subviews[0]
+        }
+    }
+}
+
+class HeaderButton: UIButton {
 }
 
 class MyOwnTableView: UITableView {
