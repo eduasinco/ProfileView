@@ -82,4 +82,3 @@ class ViewController: UIViewController, UIScrollViewDelegate, UIGestureRecognize
 		}
 	}
 }
-
