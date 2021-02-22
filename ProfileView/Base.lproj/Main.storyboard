@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="O0s-9f-dkD">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -9,31 +9,31 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Profile-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ProfileView" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="692"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OG9-VE-ddQ">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="692"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uLm-ba-JW4">
-                                        <rect key="frame" x="0.0" y="0.0" width="1242" height="736"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="1242" height="692"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="eFt-TY-0x6">
-                                                <rect key="frame" x="0.0" y="0.0" width="1242" height="736"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="1242" height="692"/>
                                                 <subviews>
                                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p6l-84-aCi">
-                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="692"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3zC-n4-o0R">
-                                                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="414" height="692"/>
                                                                 <subviews>
                                                                     <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ako-l1-tsN">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="692"/>
                                                                         <connections>
                                                                             <segue destination="3Vs-Yx-joV" kind="embed" id="SSq-8o-Vqd"/>
                                                                         </connections>
@@ -59,13 +59,13 @@
                                                         </constraints>
                                                     </scrollView>
                                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6gL-Sc-EYM">
-                                                        <rect key="frame" x="414" y="0.0" width="414" height="736"/>
+                                                        <rect key="frame" x="414" y="0.0" width="414" height="692"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xjw-0h-6xi">
-                                                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="414" height="692"/>
                                                                 <subviews>
                                                                     <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lJ4-lD-9My">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="692"/>
                                                                         <connections>
                                                                             <segue destination="yGG-X5-8TZ" kind="embed" id="CdD-jC-HPN"/>
                                                                         </connections>
@@ -90,13 +90,13 @@
                                                         </constraints>
                                                     </scrollView>
                                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Laf-qe-RDn">
-                                                        <rect key="frame" x="828" y="0.0" width="414" height="736"/>
+                                                        <rect key="frame" x="828" y="0.0" width="414" height="692"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jjm-jl-gei">
-                                                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="414" height="692"/>
                                                                 <subviews>
                                                                     <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UaJ-tN-Fq5">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="692"/>
                                                                         <connections>
                                                                             <segue destination="YgR-1C-pvy" kind="embed" id="da4-zI-v1I"/>
                                                                         </connections>
@@ -190,6 +190,7 @@
                             <constraint firstItem="OG9-VE-ddQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="t7E-RA-tP3"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Profile" id="mDD-Wu-280"/>
                     <connections>
                         <outlet property="container1TopConstraint" destination="j1B-ex-umi" id="fbT-sZ-HZE"/>
                         <outlet property="container2TopConstraint" destination="JYK-hl-Fmn" id="gaF-Mu-j3c"/>
@@ -207,18 +208,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="129.61956521739131"/>
+            <point key="canvasLocation" x="1044.9275362318842" y="129.61956521739131"/>
         </scene>
         <!--Tab1 View Controller-->
         <scene sceneID="1zq-xM-H3f">
             <objects>
                 <viewController id="3Vs-Yx-joV" customClass="Tab1ViewController" customModule="ProfileView" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="em9-YM-u5V">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="692"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cb9-qr-hz3" customClass="MyOwnTableView" customModule="ProfileView" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="692"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableViewCell1" id="bbm-L0-ihm" customClass="TableViewCell" customModule="ProfileView" customModuleProvider="target">
@@ -271,11 +272,11 @@
             <objects>
                 <viewController id="yGG-X5-8TZ" customClass="Tab2ViewController" customModule="ProfileView" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ev5-P6-u5c">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="692"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Oh0-lJ-c6l" customClass="MyOwnTableView" customModule="ProfileView" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="692"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableViewCell2" id="X5t-Tr-GdN" customClass="TableViewCell" customModule="ProfileView" customModuleProvider="target">
@@ -328,11 +329,11 @@
             <objects>
                 <viewController id="YgR-1C-pvy" customClass="Tab3ViewController" customModule="ProfileView" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ne6-x3-It8">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="692"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3iL-1B-3z7" customClass="MyOwnTableView" customModule="ProfileView" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="692"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableViewCell3" id="5vr-4P-ulZ" customClass="TableViewCell" customModule="ProfileView" customModuleProvider="target">
@@ -379,6 +380,28 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OCq-Uq-eCk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="893" y="924"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="vg9-Pv-6qN">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="O0s-9f-dkD" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="gPJ-f5-tny">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="lZF-HR-GXM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="twG-Bc-rcZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="129.61956521739131"/>
         </scene>
     </scenes>
     <resources>
