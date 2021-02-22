@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2721683025DFDC9C00865A92 /* header_image.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 2721682F25DFDC9C00865A92 /* header_image.jpeg */; };
 		87D8A5BF2460A3610056AC9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D8A5BE2460A3610056AC9B /* AppDelegate.swift */; };
-		87D8A5C12460A3610056AC9B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D8A5C02460A3610056AC9B /* SceneDelegate.swift */; };
 		87D8A5C32460A3610056AC9B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D8A5C22460A3610056AC9B /* ViewController.swift */; };
 		87D8A5C62460A3610056AC9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87D8A5C42460A3610056AC9B /* Main.storyboard */; };
 		87D8A5C82460A3620056AC9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87D8A5C72460A3620056AC9B /* Assets.xcassets */; };
@@ -21,9 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2721682F25DFDC9C00865A92 /* header_image.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = header_image.jpeg; sourceTree = "<group>"; };
 		87D8A5BB2460A3610056AC9B /* ProfileView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProfileView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87D8A5BE2460A3610056AC9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		87D8A5C02460A3610056AC9B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		87D8A5C22460A3610056AC9B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		87D8A5C52460A3610056AC9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		87D8A5C72460A3620056AC9B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -68,10 +68,10 @@
 			children = (
 				87D8A5D22460A5BD0056AC9B /* Utils.swift */,
 				87D8A5BE2460A3610056AC9B /* AppDelegate.swift */,
-				87D8A5C02460A3610056AC9B /* SceneDelegate.swift */,
 				87D8A5C22460A3610056AC9B /* ViewController.swift */,
 				87F8F8F62464BE230057AF59 /* Tabs */,
 				87D8A5C42460A3610056AC9B /* Main.storyboard */,
+				2721682F25DFDC9C00865A92 /* header_image.jpeg */,
 				87D8A5C72460A3620056AC9B /* Assets.xcassets */,
 				87D8A5C92460A3620056AC9B /* LaunchScreen.storyboard */,
 				87D8A5CC2460A3630056AC9B /* Info.plist */,
@@ -150,6 +150,7 @@
 			files = (
 				87D8A5CB2460A3620056AC9B /* LaunchScreen.storyboard in Resources */,
 				87D8A5C82460A3620056AC9B /* Assets.xcassets in Resources */,
+				2721683025DFDC9C00865A92 /* header_image.jpeg in Resources */,
 				87D8A5C62460A3610056AC9B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -163,7 +164,6 @@
 			files = (
 				87D8A5C32460A3610056AC9B /* ViewController.swift in Sources */,
 				87D8A5BF2460A3610056AC9B /* AppDelegate.swift in Sources */,
-				87D8A5C12460A3610056AC9B /* SceneDelegate.swift in Sources */,
 				87D8A5F7246203620056AC9B /* Tab1ViewController.swift in Sources */,
 				87D8A5D32460A5BD0056AC9B /* Utils.swift in Sources */,
 				87D8A5FB246206660056AC9B /* TableViewCell.swift in Sources */,
@@ -313,14 +313,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = RQT83D9L27;
+				DEVELOPMENT_TEAM = 5MG4YU4SAP;
 				INFOPLIST_FILE = ProfileView/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.EduardoRdoriguezPerez.ProfileView;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.digital-healthtech.ProfileView";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -331,16 +331,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = RQT83D9L27;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ProfileView/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.EduardoRdoriguezPerez.ProfileView;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.digital-healthtech.ProfileView";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

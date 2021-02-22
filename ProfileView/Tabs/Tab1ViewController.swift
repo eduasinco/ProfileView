@@ -9,26 +9,26 @@
 import UIKit
 
 class Tab1ViewController: UIViewController {
-
-    @IBOutlet weak var tableView: UITableView!
-    let data = Array(0...100)
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        self.view.translatesAutoresizingMaskIntoConstraints = false
-        tableView.delegate = self
-        tableView.dataSource = self
-        // Do any additional setup after loading the view.
-    }
+	
+	@IBOutlet weak var tableView: UITableView!
+	let data = Array(0...100)
+	override func viewDidLoad() {
+		super.viewDidLoad()
+		self.view.translatesAutoresizingMaskIntoConstraints = false
+		tableView.delegate = self
+		tableView.dataSource = self
+		// Do any additional setup after loading the view.
+	}
 }
 
 extension Tab1ViewController: UITableViewDataSource, UITableViewDelegate {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return data.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell1") as! TableViewCell
-        cell.label.text = "\(data[indexPath.row])"
-        return cell
-    }
+	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+		return data.count
+	}
+	
+	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+		let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell1") as! TableViewCell
+		cell.label.text = "\(data[indexPath.row])"
+		return cell
+	}
 }
