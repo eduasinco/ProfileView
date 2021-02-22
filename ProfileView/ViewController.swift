@@ -41,11 +41,14 @@ class ViewController: UIViewController {
 	
 	private func setupRefreshController() {
 		// Add the refresh control to your UIScrollView object.
-		
-		externalScrollView.refreshControl = UIRefreshControl()
-		externalScrollView.refreshControl?.addTarget(self, action:
-																					#selector(handleRefreshControl),
-																				 for: .valueChanged)
+		[scrollView1,
+		scrollView2,
+		scrollView3].forEach { (view) in
+			view?.refreshControl = UIRefreshControl()
+			view?.refreshControl?.addTarget(self, action:
+																										#selector(handleRefreshControl),
+																									 for: .valueChanged)
+		}
 	}
 	
 	@objc func handleRefreshControl() {
@@ -55,6 +58,11 @@ class ViewController: UIViewController {
 		
 		// Dismiss the refresh control.
 		DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+			[self.scrollView1,
+			 self.scrollView2,
+			 self.scrollView3].forEach { (view) in
+				view?.refreshControl?.endRefreshing()
+			}
 			self.externalScrollView.refreshControl?.endRefreshing()
 			self.view.isUserInteractionEnabled = true
 		}
@@ -74,6 +82,7 @@ extension ViewController: UIScrollViewDelegate {
 	}
 	
 	func scrollViewDidScroll(_ scrollView: UIScrollView) {
+		print(scrollView.tag)
 		if scrollView == externalScrollView {
 			if !changingIndex {
 				segmentView.selectedSegmentIndex = Int(round(externalScrollView.contentOffset.x / externalScrollView.frame.size.width))
