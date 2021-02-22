@@ -26,7 +26,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="eFt-TY-0x6">
                                                 <rect key="frame" x="0.0" y="0.0" width="1242" height="736"/>
                                                 <subviews>
-                                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p6l-84-aCi">
+                                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p6l-84-aCi">
                                                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3zC-n4-o0R">
@@ -58,7 +58,7 @@
                                                             <constraint firstAttribute="width" constant="414" id="hNi-Xr-knC"/>
                                                         </constraints>
                                                     </scrollView>
-                                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6gL-Sc-EYM">
+                                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6gL-Sc-EYM">
                                                         <rect key="frame" x="414" y="0.0" width="414" height="736"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xjw-0h-6xi">
@@ -89,7 +89,7 @@
                                                             <constraint firstAttribute="trailing" secondItem="xjw-0h-6xi" secondAttribute="trailing" id="xdJ-82-y5e"/>
                                                         </constraints>
                                                     </scrollView>
-                                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Laf-qe-RDn">
+                                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Laf-qe-RDn">
                                                         <rect key="frame" x="828" y="0.0" width="414" height="736"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jjm-jl-gei">
@@ -136,7 +136,7 @@
                                     <constraint firstItem="uLm-ba-JW4" firstAttribute="top" secondItem="OG9-VE-ddQ" secondAttribute="top" id="23j-Hp-TNh"/>
                                     <constraint firstAttribute="bottom" secondItem="uLm-ba-JW4" secondAttribute="bottom" id="E9l-Cl-Leu"/>
                                     <constraint firstItem="uLm-ba-JW4" firstAttribute="width" secondItem="OG9-VE-ddQ" secondAttribute="width" priority="250" id="Es7-kN-mEJ"/>
-                                    <constraint firstItem="uLm-ba-JW4" firstAttribute="height" secondItem="OG9-VE-ddQ" secondAttribute="height" id="YzR-du-cY4"/>
+                                    <constraint firstItem="uLm-ba-JW4" firstAttribute="height" secondItem="OG9-VE-ddQ" secondAttribute="height" priority="999" id="YzR-du-cY4"/>
                                     <constraint firstItem="uLm-ba-JW4" firstAttribute="leading" secondItem="OG9-VE-ddQ" secondAttribute="leading" id="ZvP-vY-E20"/>
                                     <constraint firstAttribute="trailing" secondItem="uLm-ba-JW4" secondAttribute="trailing" id="adI-uQ-Rnv"/>
                                 </constraints>
@@ -165,7 +165,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="350"/>
                                     </imageView>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="jLH-v2-C7r" secondAttribute="bottom" id="3xa-0n-xL7"/>
                                     <constraint firstItem="jLH-v2-C7r" firstAttribute="leading" secondItem="2KU-Zw-KaR" secondAttribute="leading" id="8jL-br-FdD"/>
@@ -385,9 +385,6 @@
         <image name="header_image.jpeg" width="1000" height="1250"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemPinkColor">
-            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

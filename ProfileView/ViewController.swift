@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UIScrollViewDelegate, UIGestureRecognizerDelegate {
+class ViewController: UIViewController {
 	
 	@IBOutlet weak var headerView: PassthroughView!
 	@IBOutlet weak var headerTopConstraint: NSLayoutConstraint!
@@ -35,6 +35,29 @@ class ViewController: UIViewController, UIScrollViewDelegate, UIGestureRecognize
 		container2TopConstraint.constant = headerView.frame.height
 		container3TopConstraint.constant = headerView.frame.height
 		segmentView.isExclusiveTouch = true
+		
+		setupRefreshController()
+	}
+	
+	private func setupRefreshController() {
+		// Add the refresh control to your UIScrollView object.
+		
+		externalScrollView.refreshControl = UIRefreshControl()
+		externalScrollView.refreshControl?.addTarget(self, action:
+																					#selector(handleRefreshControl),
+																				 for: .valueChanged)
+	}
+	
+	@objc func handleRefreshControl() {
+		print("pullingggggg")
+		view.isUserInteractionEnabled = false
+		// Update your content…
+		
+		// Dismiss the refresh control.
+		DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+			self.externalScrollView.refreshControl?.endRefreshing()
+			self.view.isUserInteractionEnabled = true
+		}
 	}
 	
 	var changingIndex = false
@@ -43,14 +66,16 @@ class ViewController: UIViewController, UIScrollViewDelegate, UIGestureRecognize
 		let x = segmentView.selectedSegmentIndex * Int(externalScrollView.frame.width)
 		externalScrollView.setContentOffset(CGPoint(x:x, y:0), animated: true)
 	}
-	
+}
+
+extension ViewController: UIScrollViewDelegate {
 	func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
 		changingIndex = false
 	}
 	
 	func scrollViewDidScroll(_ scrollView: UIScrollView) {
 		if scrollView == externalScrollView {
-			if !changingIndex{
+			if !changingIndex {
 				segmentView.selectedSegmentIndex = Int(round(externalScrollView.contentOffset.x / externalScrollView.frame.size.width))
 			}
 		} else {
@@ -71,14 +96,8 @@ class ViewController: UIViewController, UIScrollViewDelegate, UIGestureRecognize
 				scrollView1.contentOffset.y = scrollView.contentOffset.y
 				scrollView2.contentOffset.y = scrollView.contentOffset.y
 				scrollView3.contentOffset.y = scrollView.contentOffset.y
-				
-				if scrollView.contentOffset.y <= 0 {
-					headerTopConstraint.constant = 0
-					headerHeighConstraint.constant = 400 - scrollView.contentOffset.y
-				} else {
-					headerTopConstraint.constant = -scrollView.contentOffset.y
-				}
 			}
 		}
+		headerTopConstraint.constant = -scrollView.contentOffset.y
 	}
 }
